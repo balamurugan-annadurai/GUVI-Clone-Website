@@ -8,7 +8,7 @@ const FullStackDevelopment = () => {
     <div className='container row justify-content-center'>
       {
         blogs.map((blog, index) => (
-          blog.domain === 'fs' && <Card img={blog.img} title={blog.title} key={index} />
+          blog.domain === 'Full stack Development' && <Card blog={blog} key={index}/>
         ))
       }
     </div>

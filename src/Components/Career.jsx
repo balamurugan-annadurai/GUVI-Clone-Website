@@ -9,7 +9,7 @@ const Career = () => {
       <div className='container row justify-content-center'>
         {
           blogs.map((blog, index) => (
-            blog.domain === 'c' && <Card img={blog.img} title={blog.title} key={index} />
+            blog.domain === 'Career' && <Card blog={blog} key={index}/>
           ))
         }
       </div>

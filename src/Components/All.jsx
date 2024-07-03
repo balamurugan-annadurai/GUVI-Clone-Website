@@ -8,7 +8,7 @@ const All = () => {
     <div className='container row justify-content-center'>
       {
         blogs.map((blog,index) => (
-          <Card img={blog.img} title={blog.title} key={index}/>
+          <Card blog={blog} key={index}/>
         ))
        }
     </div>

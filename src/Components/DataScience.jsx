@@ -8,7 +8,7 @@ const DataScience = () => {
     <div className='container row justify-content-center'>
       {
         blogs.map((blog, index) => (
-          blog.domain === 'ds' && <Card img={blog.img} title={blog.title} key={index} />
+          blog.domain === 'Data science' && <Card blog={blog} key={index}/>
         ))
       }
     </div>

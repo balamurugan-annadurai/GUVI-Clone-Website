@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
 import guviLogo from "../assets/guvi-logo.svg"
-import Context from './Context'
+import { useLocation } from 'react-router-dom'
 
 const DisplayContent = () => {
-    const blogs = useContext(Context);
+    const location = useLocation();
+    const { blog } = location.state;
     return (
         <>
             <header>
@@ -34,12 +35,17 @@ const DisplayContent = () => {
             </header>
 
             <main>
-                <div className="container">
-                    {
-                        blogs.map(blog => (
-                          blog.key === 1 && blog.title
-                     ))
-                    }
+                <div className="container blog-content mt-3">
+                    <h1 className='mb-4'>{blog.title}</h1>
+                    <div className="article">
+                        <img src={blog.img} alt="" />
+                        <div className="inner">
+                            <p className='blog-details'>{blog.domain}</p>
+                            <p className='blog-details'>Junl 02, 2024</p>
+                            <p className='blog-content p'>{blog.content}</p>
+                            <button className='btn btn-dark readMoreBtn mb-3'><a href={blog.url}>Read More</a></button>
+                        </div>
+                    </div>
                 </div>
             </main>
         </>

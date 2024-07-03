@@ -135,6 +135,32 @@ ul li a:focus{
 a{
     text-decoration: none;
 }
+.blog-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-content img{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,.2);
+    
+}
+.article{
+    display: flex;
+    gap: 10px;
+    
+}
+.blog-details{
+   color: rgb(150, 146, 146); 
+}
+.blog-content p{
+    line-height: 30px;
+}
+.readMoreBtn a{
+   color: #fff;
+}
+
 @media screen and (max-width:576px){
     .navbar-container ul{
         display: flex;
@@ -186,7 +212,32 @@ a{
     .inner-container{
         height: 300px;
     }
+    .article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .blog-content img{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 10px 25px rgba(0,0,0,.2);
     
+    }
+    
+}
+@media screen and (max-width:1200px){
+    .article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .blog-content img{
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0px 10px 25px rgba(0,0,0,.2);
+    
+    }
 }
 @media screen and (min-width:992px){
     .navbar-container ul{
