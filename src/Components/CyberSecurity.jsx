@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Context from './Context';
 import Card from './Card';
 
+//CyberSecurity component to display only CyberSecurity related blogs
 const CyberSecurity = () => {
   const blogs = useContext(Context);
   return (

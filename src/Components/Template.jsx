@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import guviLogo from "../assets/guvi-logo.svg"
 import { NavLink, Outlet } from 'react-router-dom';
 
+
+//Template component serves as the main layout for the application
 const Template = () => {
 
     const [navStatus, setNavStatus] = useState(false);

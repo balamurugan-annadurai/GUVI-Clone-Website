@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Context from './Context'
 import Card from './Card';
 
+//All component to display all blogs
 const All = () => {
   const blogs = useContext(Context);
   return (

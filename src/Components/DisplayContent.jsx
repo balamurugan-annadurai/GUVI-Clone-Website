@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import guviLogo from "../assets/guvi-logo.svg"
 import { useLocation } from 'react-router-dom'
 
+//DisplayContent component displays the details of a selected blog post
 const DisplayContent = () => {
     const location = useLocation();
     const { blog } = location.state;

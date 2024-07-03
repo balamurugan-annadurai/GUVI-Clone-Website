@@ -15,6 +15,7 @@ import c1 from './assets/career/c1.webp';
 import c2 from './assets/career/c2.webp';
 import c3 from './assets/career/c3.webp';
 
+//blog data's
 const blogs = [
     {
         title: 'Best Full-Stack Development Project Ideas in 2024',

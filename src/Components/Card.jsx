@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
+//Card component to display blog informations
 const Card = ({ blog }) => {
     const navigate = useNavigate();
     const handleClick = () => {

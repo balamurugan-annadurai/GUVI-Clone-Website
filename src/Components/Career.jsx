@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Context from './Context';
 import Card from './Card';
 
+//Career component to display only career related blogs
 const Career = () => {
   const blogs = useContext(Context);
   

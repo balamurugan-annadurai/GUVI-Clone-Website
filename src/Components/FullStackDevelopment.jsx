@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Context from './Context';
 import Card from './Card';
 
+//FullStackDevelopment component to display only FullStackDevelopment related blogs
 const FullStackDevelopment = () => {
   const blogs = useContext(Context);
   return (

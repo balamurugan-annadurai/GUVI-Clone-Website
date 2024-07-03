@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Context from './Context';
 import Card from './Card';
 
+//DataScience component to display only DataScience related blogs
 const DataScience = () => {
   const blogs = useContext(Context);
   return (

@@ -12,6 +12,7 @@ import Context from './Components/Context';
 import DisplayContent from './Components/DisplayContent'
 import blogs from './BlogsData'
 
+//create a router
 const router = createBrowserRouter([
     {
         element: <Template />,
@@ -52,6 +53,7 @@ const router = createBrowserRouter([
 const App = () => {
 
     return (
+        //provide the blogs context to all components within the Context.Provider
         <Context.Provider value={blogs}>
             <RouterProvider router={router} />
         </Context.Provider>
